@@ -1,8 +1,9 @@
-'use strict';
+(function () {
+  'use strict';
 
-/* Controllers */
+  /* Controllers */
 
-angular.module('openWeatherApp.controllers', [])
+  angular.module('openWeatherApp.controllers', [])
 
   // Controller for "open weather map" api data search
   .controller('OpenWeatherCtrl',
@@ -25,7 +26,7 @@ angular.module('openWeatherApp.controllers', [])
     // Get forecast data for location as given in $scope.location
     $scope.getForecastByLocation = function() {
 
-      if ($scope.location == '' || $scope.location == undefined) {
+      if ($scope.location === '' || $scope.location === undefined) {
         $scope.hasState = 'has-warning';
         $scope.message = 'Please provide a location';
         return;
@@ -49,4 +50,5 @@ angular.module('openWeatherApp.controllers', [])
       return (iconName ? $scope.iconBaseUrl + iconName + '.png' : '');
     };
 
-  }])
+  }]);
+}());
