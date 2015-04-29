@@ -10,10 +10,12 @@
     "start": "node scripts/web-server.js"
   },
   "devDependencies": {
-      "phantomjs" : "*",
-      "karma" : "*",
-      "karma-junit-reporter" : "*",
-      "karma-jasmine" : "*",
-      "karma-ng-scenario" : "*"
+    "phantomjs": "*",
+    "karma": "*",
+    "karma-junit-reporter": "*",
+    "karma-jasmine": "*",
+    "karma-ng-scenario": "*",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }
