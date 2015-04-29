@@ -4,8 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>OpenWeather App</title>
-        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"/>
-        <link rel="stylesheet" href="css/app.css"/>
+        <!-- build:css assets/css/style.min.css -->
+            <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"/>
+            <link rel="stylesheet" href="css/app.css"/>
+        <!-- endbuild -->
     </head>
     <body>
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -35,15 +37,19 @@
                 This app uses the great api of the <a href="http://openweathermap.org/">Open Weather Map</a> project.</span>
             </small>
         </nav>
-        <script src="lib/angular/angular.js"></script>
-        <script src="lib/angular/angular-route.js"></script>
-        <script src="lib/angular/angular-resource.js"></script>
-        <script src="lib/iso-3166-country-codes-angular/iso-3166-country-codes-angular.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/services.js"></script>
-        <script src="js/controllers.js"></script>
-        <script src="js/filters.js"></script>
-        <script src="js/directives.js"></script>
+        <!-- build:js scripts/vendor.js -->',
+            <script src="lib/angular/angular.js"></script>
+            <script src="lib/angular/angular-route.js"></script>
+            <script src="lib/angular/angular-resource.js"></script>
+            <script src="lib/iso-3166-country-codes-angular/iso-3166-country-codes-angular.js"></script>
+        <!-- endbuild -->'
+        <!-- build:js scripts/app.js -->',
+            <script src="js/app.js"></script>
+            <script src="js/services.js"></script>
+            <script src="js/controllers.js"></script>
+            <script src="js/filters.js"></script>
+            <script src="js/directives.js"></script>
+        <!-- endbuild -->'
     </body>
 </html>
 
